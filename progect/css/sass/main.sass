@@ -1,0 +1,412 @@
+@import "bourbon/bourbon"
+
+$text-color: #333
+$dark-color: #000
+$red-color: #9b1818
+$blu-color: #003469
+$green-color: #67bc5c
+body
+	font-family: "RobotoRegular", sans-serif
+	color: $text-color
+	font-weight: normal
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	-webkit-font-smoothing: antialised
+	overflow-x: hidden
+h1
+	color: #fff
+	font-size: 60px
+	line-height: 56px
+	font-weight: bold
+	font-family: "CleanvertisingLight", sans-serif
+	margin: 0
+
+section,
+footer
+	padding: 58px 0 68px
+	&.s_dark
+	h2, h3, p
+	color: #fff
+h2 
+	color: $blu-color
+	font-size: 50px
+	line-height: 56px
+	margin-bottom: 50px
+	font-family: "CleanvertisingLight", sans-serif
+	text-align: center
+	margin-top: 0
+	font-weight: normal
+section 
+	color: #000
+p.strong
+	font-family: "RobotoBold", sans-serif
+	font-weight: normal
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+	box-shadow: $red-color 0 0 0 2px
+	border-color: $red-color
+body input:required:valid,
+body textarea:required:valid
+	color: green
+.hidden
+	display: none
+
+header
+	min-height: 640px
+	background-image: url(../img/top_bg.jpg)
+	background-position: top center
+	background-size: cover
+	padding-top: 32px
+	color: #fff
+	padding-bottom: 40px
+	
+
+.top_line .logo 
+	font-size: 40px
+	font-family: "RobotoBold", sans-serif
+	font-weight: bold
+.top_phone 
+	text-align: right
+.tab_item
+	display: none
+.tab_item:first-child
+	display: block
+
+.top_phone .wrapper .tab 
+	text-transform: uppercase
+	cursor: pointer
+
+.top_phone .wrapper .active 
+	text-decoration: underline
+.top_phone .tab_item 
+	display: none
+	font-size: 35px
+	font-family: "RobotoBold", sans-serif
+
+.top_header
+	margin-top: 70px
+	h2
+		text-align: left
+		color: #fff
+		margin: 10px 0 0
+		font-size: 36px
+		font-family: "CleanvertisingLight", sans-serif
+		
+.tabs_header
+	margin-top: 50px
+	ul, li
+		list-style-type: none
+		margin: 0
+		padding: 0
+	li
+		padding-left: 40px
+		position: relative
+		margin-bottom: 12px
+	i
+		position: absolute
+		left: 5px
+		
+		top: 3px
+		line-height: 26px
+		color: #6f6a67
+		font-size: 20px
+
+	.tabs
+		.tab
+			display: inline-block
+			background-color: rgba(255,255,255,.25)
+			padding: 15px 18px
+			text-transform: uppercase
+			cursor: pointer
+			float: left
+			font-family: "RobotoBold", sans-serif
+			font-size: 16px
+			+transition(all .25s ease)
+			&.active
+				background-color: rgba(255,255,255,.6)
+				color: #000
+	.tab_content
+			font-size: 18px
+			background-color: rgba(255,255,255,.6)
+			padding: 12px 18px 18px
+			color: #000
+			text-transform: uppercase
+			font-family: "RobotoBold", sans-serif
+
+.button
+	border: none
+	cursor: pointer
+	display: inline-block 
+	height: 46px
+	line-height: 46px
+	padding: 0 34px
+	background-color: #000
+	text-transform: uppercase
+	text-align: center
+	color: #fff
+	border-radius: 3px
+	font-size: 16px
+	font-family: "RobotoBold", sans-serif
+	&.btn_red
+		background-color: $red-color
+	&.btn_green
+		background-color: $green-color
+	&.btn_white
+		background-color: #fff
+		color: #000
+.button_wrap
+	text-align: right
+a.button
+	color: #fff
+	text-decoration: none
+.s_tizers
+	+linear-gradient(#c6d8ee, #e8eff7)
+	color: $blu-color
+	font-family: "CleanvertisingLight", sans-serif
+	text-transform: uppercase
+	padding: 35px 0 0
+	span
+		font-size: 14px
+		display: block
+	strong
+		font-weight: normal
+		font-size: 23px
+		display: block
+	.row
+		> div
+			margin-bottom: 35px
+.tiz_img,
+.tiz_descr 
+	display: inline-block
+	padding-right: 45px
+	margin-left: 10px
+	vertical-align: bottom
+
+.tiz_img i
+	font-size: 56px
+	line-height: 48px
+	position: absolute
+	margin-right: 5px
+	
+.tiz_descr__top 
+  	font-size: 17px
+  	line-height: 28px
+
+.profi_left 
+
+	color: $red-color
+
+
+	i
+		font-size: 80px
+		line-height: 100px
+
+.profi_right
+	h3
+		display: inline-block
+		margin: 0
+		color: $red-color
+		font-size: 28px
+		margin-left: -10px
+
+	p
+		margin-top: 8px
+		margin-left: -10px
+form
+	background-color: #f7f7f7
+	padding: 25px 30px
+	border: $green-color 5px solid 
+	border-radius: 5px
+	h2
+		text-transform: uppercase
+		margin-top: 0
+		font-family: "RobotoBold", sans-serif
+		font-size: 22px
+		color: $text-color
+		line-height: 22px
+		margin-bottom: 30px
+	label
+		display: block
+		margin-bottom: 15px
+		color: #666
+		font-size: 14px
+	input,
+	select
+		display: block
+		line-height: 40px
+		height: 40px
+		border: #d9d9d9 1px solid
+		box-shadow: 0 0 20px rgba(0,0,0,.06) inset
+		width: 100%	
+		text-indent: 10px
+		font-size: 20px
+		margin-top: 3px
+		outline: none
+		&:focus
+			box-shadow: $green-color 0 0 0 2px
+			border-radius: 3px
+			border-color: $green-color
+	select
+		background-image: url(../img/arrow.svg)
+		background-position: right center
+		background-repeat: no-repeat
+.button_wrap
+	text-align: center	
+	margin: 30px 0 10px
+.s_review
+	background-image: url(../img/middle_bg.jpg)
+	background-attachment: fixed 
+	min-height: 500px
+	background-position: top center
+	background-size: cover
+	background-color: #412521
+.s_review h2 
+	color: #fff
+.review_item
+	color: #fff
+	text-align: center
+	h4
+	font-family: "Times New Roman", serif 
+	font-style: italic
+	font-size: 22px
+	font-weight: normal
+	margin-top: 20px
+	margin-bottom: 20px
+.review_item p
+	margin: 30px auto 0
+	display: inline-block
+	float: none
+	font-size: 15px
+	font-family: "RobotoRegular", sans-serif
+.image_wrap
+	text-align: center
+img
+	width: 165px
+	height: 165px
+	display: inline-block 
+	border-radius: 50%
+	border: #585a5b 10px solid
+	 	
+.hr
+	width: 80px
+	height: 1px
+	background-color: #CEA380
+	margin: auto 
+.owl-nav
+	div
+	widows: 37px
+	height: 140px
+	background-image: url(../img/s_arrow.png)
+	top: 20px
+	position: absolute 
+	opacity: .6
+	&:hover
+		opacity: 1  
+	&.owl-next
+	right: 0
+	background-position: top right
+.owl-dots
+	width: 100%
+	margin-top: 20px
+	text-align: center
+	.owl-dot
+	width: 14px
+	height: 14px
+	background-color: #fff
+	display: inline-block
+	margin: 0 4px
+	border-radius: 50px
+	opacity: .5
+	&.active
+	 	opacity: .8
+.s_back
+	background-image: url(../img/red_bg.jpg)
+	background-position: top center
+	text-align: center
+	padding: 40px 0
+.s_back h3
+	color: #fff
+	margin-top: 0
+	text-transform: uppercase
+	font-weight: normal 
+	font-size: 26px
+	text-align: center
+	font-family: "RobotoRegular", sans-serif 
+	background-color: rgba(255,255,255,.13)
+	padding: 10px 0
+.button
+	margin: auto
+.mfp-figure:after 
+	background: none
+
+.s_contacts
+	text-align: center
+	padding-bottom: 0
+	.wrapper
+		margin-top: 15px
+		font-size: 18px
+	.contacts_top
+	h2
+		color: #000
+		display: inline-block
+		vertical-align: middle
+		margin-bottom: 0
+		height: 45px
+		line-height: 45px
+	.tabs
+		display: inline-block
+		vertical-align: middle
+		height: 45px
+		line-height: 45px
+		margin-left: 20px
+	.tab
+		float: left
+		padding: 0 60px
+		border: $red-color 5px solid
+		line-height: 38px
+		color: $red-color
+		&:first-child
+			border-radius: 3px 0 0 3px
+		&:last-child
+			border-radius: 0 3px 3px 0
+		&.active
+			background-color: $red-color
+			color: #fff
+.map
+	margin-top: 20px
+	min-height: 498px
+	background-color: #e1d6b0
+
+footer
+	h2
+		color: #000
+	p
+		font-size: 18px
+		text-align: center
+		margin-top: 0
+		color: #000
+.bottom_phone
+	color: $red-color 
+	text-align: center
+	margin-top: 60px
+.tab_item
+	display: none
+.tab_item:first-child
+	display: block
+
+.bottom_phone .wrapper .tab 
+	text-transform: uppercase
+	cursor: pointer
+
+.bottom_phone .wrapper .active 
+	text-decoration: underline
+.bottom_phone .tab_item 
+	display: none
+	font-size: 35px
+	font-family: "RobotoBold", sans-serif
+.button_wrap
+	margin-top: 37px
